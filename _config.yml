@@ -9,12 +9,18 @@ facebook_username: eomdev
 github_username:  umsh86
 
 # Build settings
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
 markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
 redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
+  extensions: ["footnotes", "smart", "tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 
 # Configuring Jekyll
 highlighter: pygments
+#permalink: none
 safe: true
 lsi: false
 

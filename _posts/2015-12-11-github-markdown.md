@@ -100,7 +100,9 @@ bold나 italic 으로 만들 수 있다.
 - item2
 
 **Ordered lists**
+
 순서가 있는 리스트를 위해서는 숫자와 함께 사용하면 된다.
+
 ```text
 1. Item 1
 2. Item 2
@@ -108,9 +110,10 @@ bold나 italic 으로 만들 수 있다.
 ```
 1. Item 1
 2. Item 2
-3. Item 1
+3. Item 3
 
 **Nested lists**
+
 두 개의 space로 들여 쓰기를 하게 되면, 중첩된 목록을 만들 수 있다.
 
 ```text
@@ -129,14 +132,15 @@ bold나 italic 으로 만들 수 있다.
   2. SOA
 2. Java
   1. Java 8
-    * 스트림
-    * 람다
+     * 스트림
+     * 람다
   2. 자바 성능
 
 ## Code formatting
 **Inline formats**
 
-하나의 따옴표 안에 작성된 plain text들은 HTML로 변환되지 않고 그대로 plain text로 출력된다. 
+하나의 따옴표 안에 작성된 plain text들은 HTML로 변환되지 않고 그대로 plain text로 출력된다.
+ 
 ```text
 `**여기에 존재하는 내용은 볼드가 아니라 그대로 출력된다.**` 는 내용이다.
 ```
@@ -168,7 +172,7 @@ bold나 italic 으로 만들 수 있다.
 row를 분리하기 위해서 `-` 를 사용하고, column을 분리하기 위해서 `|`를 사용한다.
 좌측, 가운데, 우측정렬을 위해서는 `:`를 사용한다.
 
-```text
+```
 |헤더1|헤더2|
 |----|----|
 |셀1  | 셀2|
