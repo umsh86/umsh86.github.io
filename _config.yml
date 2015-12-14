@@ -1,0 +1,23 @@
+# Site settings
+title: eomdev's blog
+email: umsh86@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  배움을 좋아하고, 많고 다양한 경험을 해보기를 원합니다.
+
+url: "http://blog.eomdev.com" # the base hostname & protocol for your site
+facebook_username: eomdev
+github_username:  umsh86
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]
+
+# Configuring Jekyll
+highlighter: pygments
+safe: true
+lsi: false
+
+
+# paging
+paginate: 10
