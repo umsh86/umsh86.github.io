@@ -430,6 +430,7 @@
     max-width: 100%;
     box-sizing: content-box;
     background-color: #fff;
+    margin-bottom: 40px;
 }
 
 .markdown-body code {
@@ -459,7 +460,7 @@
 }
 
 .markdown-body .highlight {
-    margin-bottom: 16px;
+    margin-bottom: 40px;
 }
 
 .markdown-body .highlight pre,
