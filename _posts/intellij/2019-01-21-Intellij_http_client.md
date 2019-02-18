@@ -96,6 +96,6 @@ Content-Type: multipart/form-data; boundary=WebAppBoundary
 --WebAppBoundary
 Content-Disposition: form-data; name="file"; filename="test.png"
 
-< /Users/sheom/Desktop/test.png
+< /Users/eomdev/Desktop/test.png
 --WebAppBoundary--
 </pre>
