@@ -86,5 +86,16 @@ local, dev, st 환경에서 번갈아가면서 테스트할 때 꽤나 유용했
 authorizationKey 변수를 사용해서 다른 요청을 하는 방법은 아래와 같다.
 <img width="320" alt="2019-01-21 11 55 56" src="https://user-images.githubusercontent.com/1261904/51481824-27d62d80-1dd8-11e9-98ef-a82d5ee5ce74.png">
 
+# 4. file upload(2019.02.18 추가) 
 
+<pre>
+### file upload
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
 
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test.png"
+
+< /Users/sheom/Desktop/test.png
+--WebAppBoundary--
+</pre>
