@@ -11,7 +11,7 @@ github_username:  umsh86
 # Build settings
 
 # Configuring Jekyll
-highlighter: pygments
+highlighter: rouge
 #permalink: none
 safe: true
 lsi: false
