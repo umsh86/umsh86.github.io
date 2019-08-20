@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DDD와 Setter, Default Constructor에 대해서
-categories: etc
+categories: ddd
 ---
 
 회사에서 진행하고 있는 프로젝트에 DDD(Domain-Driven Design)를 적용하고, 코드리뷰를 진행하면서 몇 분들이 궁금해했던 내용에 대해서 정리를 해두려고한다.
