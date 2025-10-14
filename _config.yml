@@ -13,9 +13,12 @@ github_username:  umsh86
 # Configuring Jekyll
 highlighter: rouge
 #permalink: none
-safe: true
 lsi: false
 
 
 # paging
-paginate: 10
+plugins:
+  - jekyll-paginate
+
+paginate: 10          # 페이지당 글 수
+paginate_path: "/page:num"  # /page2, /page3 ...

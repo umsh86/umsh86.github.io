@@ -1,3 +1,6 @@
+@use "sass:color";
+//@use "sass:math";
+@use "variables" as *;
 /**
  * Reset some basic elements
  */
@@ -32,7 +35,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc(#{$spacing-unit} / 2);
 }
 
 
@@ -93,7 +96,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+      color: color.adjust($brand-color, $lightness: -15%);
     }
 
     &:hover {
@@ -110,7 +113,7 @@ a {
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    padding-left: calc(#{$spacing-unit} / 2);
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
@@ -160,13 +163,13 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    @extend %clearfix;
+    @include clearfix;
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(800px - (#{$spacing-unit}));
         max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        padding-right: calc(#{$spacing-unit} / 2);
+        padding-left: calc(#{$spacing-unit} / 2);
     }
 }
 
