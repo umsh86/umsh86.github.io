@@ -6,6 +6,12 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      {% assign _abs = page.url | absolute_url %}
+      {% assign _enc = _abs | replace: ':', '%3A' | replace: '/', '%2F' %}
+
+      <span class="post-views" style="display:inline-block; margin-top:6px;">
+      <img src="https://myhits.vercel.app/api/hit/{{_enc}}?color=blue&label=Visitors&size=small" alt="Visitors" />
+  </span>
   </header>
 
   <article class="markdown-body">
