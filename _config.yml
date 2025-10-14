@@ -19,6 +19,7 @@ lsi: false
 # paging
 plugins:
   - jekyll-paginate
+  - jemoji
 
 paginate: 10          # 페이지당 글 수
 paginate_path: "/page:num"  # /page2, /page3 ...
